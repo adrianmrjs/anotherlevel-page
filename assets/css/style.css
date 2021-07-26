@@ -470,4 +470,69 @@ input[type=checkbox] {
   margin: 1rem;
 }
 
+footer {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-around;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (min-width: 200px) {
+  footer .principalWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  footer .principalWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 2rem 4rem 4rem 4rem;
+  }
+}
+footer .principalWrapper .direction li {
+  padding: 0.5rem;
+}
+footer .principalWrapper .blog ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .principalWrapper .blog ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+footer .principalWrapper .blog ul li img {
+  width: 80px;
+  height: 80px;
+}
+footer .principalWrapper .blog ul li div {
+  margin: 1rem;
+}
+footer .principalWrapper .red {
+  display: flex;
+}
+footer .principalWrapper .red ul li {
+  padding: 1rem;
+}
+footer .principalWrapper .red ul .icon-redes {
+  display: flex;
+  flex-direction: row;
+}
+footer .principalWrapper .red ul .icon-redes div {
+  width: 35px;
+  height: 35px;
+  padding: 0.2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -465,3 +465,73 @@ input[type="checkbox"] {
     }
 
 // -------------------- discover-area---------------------------- //
+
+// -------------------- footer ---------------------------- //
+
+
+footer{
+    display: flex;
+    color: $main-white;
+    justify-content: space-around;
+    background: $main-black;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,#000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,#000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            .principalWrapper {
+            @media(min-width: 200px){
+                @include orderFlex(column, center, center);
+                padding: 0.5rem ;
+            }
+
+            @media(min-width: 1200px) {
+                @include orderFlex(row, space-around, stretch);
+                padding: 2rem 4rem 4rem 4rem;
+
+            }
+
+            .direction{
+                li{
+                    padding: 0.5rem;
+                }
+            }
+
+            .blog {
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding-bottom: 1rem ;
+                        img{
+                            width: 80px;
+                            height: 80px;
+                        }
+                        div{
+                            margin: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .red{
+                display: flex;
+                ul{
+                    li{
+                        padding: 1rem;
+                    }
+                    .icon-redes{
+                        display: flex;
+                        flex-direction: row;
+                        div{
+                            width: 35px;
+                            height: 35px;
+                            padding: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+// -------------------- footer ---------------------------- //
