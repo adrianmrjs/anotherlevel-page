@@ -384,4 +384,90 @@ input[type=checkbox] {
   font-size: min(max(20px, 20px), 2.5vh);
 }
 
+.discover-area {
+  display: flex;
+  justify-content: center;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #1d0901, #1d0901, #1d0901, #1d0901, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #1d0901, #1d0901, #1d0901, #1d0901, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (min-width: 200px) {
+  .discover-area .principalWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .discover-area .principalWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem 4rem 4rem;
+  }
+}
+.discover-area .aboutContent-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  height: 100%;
+  margin: 1rem;
+  width: 100vh;
+}
+.discover-area .aboutContent-text h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 3rem 1rem 0 1rem;
+}
+.discover-area .aboutContent-text h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  align-items: center;
+  font-size: 2rem;
+  padding: 5px 1rem 1rem 1rem;
+  color: #FF5917;
+}
+.discover-area .aboutContent-text p {
+  font-weight: 600;
+  align-items: center;
+  padding: 0 1rem 2.5rem 1rem;
+}
+.discover-area .aboutContent-text .bottom {
+  padding: 0 1rem 2rem 1rem;
+}
+.discover-area .aboutContent-text .bottom a {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background: #000000;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.discover-area .aboutContent-text .bottom a:hover {
+  transition: 0.1s all;
+  color: #f17932;
+}
+.discover-area .aboutContent-img {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.discover-area .aboutContent-img img {
+  width: 100%;
+  margin: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
