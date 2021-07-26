@@ -187,4 +187,122 @@ input[type="checkbox"] {
 }
 
 
+// -------------------- Header ---------------------------- //
 // -------------------- About ---------------------------- //
+
+.about {
+
+    .principalWrapper {
+        @media(min-width: 200px){
+            @include orderFlex(column,center,center);
+            padding: 7rem 0.5rem 4rem 0.5rem ;
+        }
+
+        @media(min-width: 1200px) {
+            @include orderFlex(column, space-between, center);
+            padding: 20rem 8rem 16rem 8rem;
+        }
+    }
+
+    width: 100%;
+    height: 95vh;
+    max-height: 1200px;
+    position: relative;
+    @include orderFlex(column, center, center);
+    background-color: #f12711;
+    background-image: linear-gradient(135deg,#f12711,#f5af19,#f12711,
+    #f5af19,#f12711 );
+    background-size: 500%;
+    animation: fanimado 33s infinite;
+
+        @keyframes fanimado{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 100%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+
+    div {
+        width: 100%;
+        text-align: center;
+        @include orderFlex(column, center, center)
+    }
+
+   h1{
+       font-weight: 700;
+       font-size: min(max(35px, 35px), 4vh);
+       color: $main-white;
+       text-transform: uppercase;
+   }
+
+   p {
+       font-weight: 400;
+       font-size: min(max(25px, 25px), 3vh);
+       margin: 1rem 0 2rem 0;
+       color: $main-white;
+   }
+
+   .bottom {
+    a {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        justify-content: center;
+        border-radius: 1rem;
+        background: $main-black;
+        color: $main-white;
+        font-size:min(max(25px, 25px), 2vh);
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+            transition: .1s all;
+            color:#ff9a73;
+        }
+
+      }
+
+   }
+
+   .arrow-down {
+    position: absolute;
+    bottom: 1rem;
+    align-items: center;
+   }
+
+
+        .arrow {
+            align-items: center;
+            border: solid black;
+            border-width: 0 6px 6px 0;
+            display: inline-block;
+            padding: 6px;
+          }
+
+          .arrow:hover {
+            align-items: center;
+            border: solid #464646;
+            border-width: 0 6px 6px 0;
+            display: inline-block;
+            padding: 6px;
+          }
+
+          .down:hover {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+          }
+
+          .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+          }
+
+    }
+// -------------------- About ---------------------------- //
+
+
