@@ -305,4 +305,73 @@ input[type="checkbox"] {
     }
 // -------------------- About ---------------------------- //
 
+// -------------------- Description ---------------------------- //
 
+ .description {
+    @include orderFlex(column, center, center);
+    background: $main-black;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000000,#000000, #000000, #1d0901);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000000,#000000, #000000, #1d0901); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .principalWrapper {
+        @media(min-width: 200px){
+            @include orderFlex(column, center, center);
+            padding: 4rem 1rem 2rem 1rem ;
+        }
+
+        @media(min-width: 1200px) {
+            @include orderFlex(column, space-between, center);
+            padding: 4rem 1rem 8rem 1rem;
+        }
+    }
+
+    div {
+        @include orderFlex(column, center, center);
+        text-align: center;
+
+        h1{
+            color: #FF5917;
+            text-transform: uppercase;
+            font-size: min(max(35px, 35px), 4vh);
+            padding-bottom: 0.5rem;
+        }
+
+        span {
+            color: $main-gray;
+            font-size: min(max(25px, 25px), 3vh);
+        }
+
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+
+        li {
+            @include orderFlex(column, space-around, center);
+            text-align: center;
+            padding: 0 0.8rem;
+
+            div {
+                width: 10rem;
+            }
+
+            h2{
+                color: $main-white;
+                text-transform: uppercase;
+                font-size: min(max(25px, 25px), 3vh);
+            }
+
+            p {
+                color: $main-white;
+                margin-top: 1.5rem;
+                font-size: min(max(20px, 20px), 2.5vh);
+            }
+        }
+    }
+}
+
+// -------------------- Description ---------------------------- //
