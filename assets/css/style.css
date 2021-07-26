@@ -348,12 +348,12 @@ input[type=checkbox] {
 .description div h1 {
   color: #FF5917;
   text-transform: uppercase;
-  font-size: min(max(35px, 35px), 4vh);
+  font-size: min(max(25px, 25px), 3.5vh);
   padding-bottom: 0.5rem;
 }
 .description div span {
   color: #f3f3f3;
-  font-size: min(max(25px, 25px), 3vh);
+  font-size: min(max(20px, 20px), 3vh);
 }
 .description ul {
   width: 100%;
@@ -371,17 +371,18 @@ input[type=checkbox] {
   padding: 0 0.8rem;
 }
 .description ul li div {
-  width: 10rem;
+  width: 7rem;
+  height: 7rem;
 }
 .description ul li h2 {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: min(max(25px, 25px), 3vh);
+  font-size: min(max(20px, 20px), 3vh);
 }
 .description ul li p {
   color: #ffffff;
   margin-top: 1.5rem;
-  font-size: min(max(20px, 20px), 2.5vh);
+  font-size: min(max(15px, 15px), 2.5vh);
 }
 
 .discover-area {
@@ -420,7 +421,6 @@ input[type=checkbox] {
   position: relative;
   height: 100%;
   margin: 1rem;
-  width: 100vh;
 }
 .discover-area .aboutContent-text h2 {
   text-transform: uppercase;
@@ -499,18 +499,30 @@ footer {
     padding: 2rem 4rem 4rem 4rem;
   }
 }
-footer .principalWrapper .direction li {
+footer .principalWrapper .direction ul .title {
+  font-size: min(max(20px, 20px), 3vh);
+  color: #FF5917;
+}
+footer .principalWrapper .direction ul li {
   padding: 0.5rem;
+  font-size: min(max(15px, 15px), 2.5vh);
 }
 footer .principalWrapper .blog ul {
   display: flex;
   flex-direction: column;
+}
+footer .principalWrapper .blog ul .title {
+  font-size: min(max(20px, 20px), 3vh);
+  color: #FF5917;
 }
 footer .principalWrapper .blog ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-bottom: 1rem;
+}
+footer .principalWrapper .blog ul li div {
+  font-size: min(max(15px, 15px), 2.5vh);
 }
 footer .principalWrapper .blog ul li img {
   width: 80px;
@@ -524,6 +536,10 @@ footer .principalWrapper .red {
 }
 footer .principalWrapper .red ul li {
   padding: 1rem;
+}
+footer .principalWrapper .red ul .title {
+  font-size: min(max(20px, 20px), 3vh);
+  color: #FF5917;
 }
 footer .principalWrapper .red ul .icon-redes {
   display: flex;

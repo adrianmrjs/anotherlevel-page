@@ -332,13 +332,13 @@ input[type="checkbox"] {
         h1{
             color: #FF5917;
             text-transform: uppercase;
-            font-size: min(max(35px, 35px), 4vh);
+            font-size: min(max(25px, 25px), 3.5vh);
             padding-bottom: 0.5rem;
         }
 
         span {
             color: $main-gray;
-            font-size: min(max(25px, 25px), 3vh);
+            font-size: min(max(20px, 20px), 3vh);
         }
 
     }
@@ -356,19 +356,20 @@ input[type="checkbox"] {
             padding: 0 0.8rem;
 
             div {
-                width: 10rem;
+                width: 7rem;
+                height: 7rem;
             }
 
             h2{
                 color: $main-white;
                 text-transform: uppercase;
-                font-size: min(max(25px, 25px), 3vh);
+                font-size: min(max(20px, 20px), 3vh);
             }
 
             p {
                 color: $main-white;
                 margin-top: 1.5rem;
-                font-size: min(max(20px, 20px), 2.5vh);
+                font-size: min(max(15px, 15px), 2.5vh);
             }
         }
     }
@@ -378,91 +379,91 @@ input[type="checkbox"] {
 
 // -------------------- discover-area ---------------------------- //
 
-    .discover-area {
-        display: flex;
-        justify-content: center;
-        background: $main-black;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #1d0901,#1d0901,#1d0901,#1d0901, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom,#1d0901, #1d0901,#1d0901,#1d0901, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.discover-area {
+    display: flex;
+    justify-content: center;
+    background: $main-black;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1d0901,#1d0901,#1d0901,#1d0901, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,#1d0901, #1d0901,#1d0901,#1d0901, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-        .principalWrapper {
-            @media(min-width: 200px){
-                @include orderFlex(column, center, center);
-                padding: 0.5rem ;
-            }
-
-            @media(min-width: 1200px) {
-                @include orderFlex(row, space-between, center);
-                padding: 2rem 4rem 4rem 4rem;
-            }
+    .principalWrapper {
+        @media(min-width: 200px){
+            @include orderFlex(column, center, center);
+            padding: 0.5rem ;
         }
 
-        .aboutContent-text {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            color: white;
-            position: relative;
-            height: 100%;
-            margin: 1rem;
-            width: 100vh;
-
-            h2 {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 0.8rem;
-                padding: 3rem 1rem 0 1rem;
-
-
-            }
-
-            h1{
-                text-transform: uppercase;
-                font-weight: 700;
-                align-items: center;
-                font-size: 2rem;
-                padding: 5px 1rem 1rem 1rem ;
-                color: #FF5917;
-            }
-
-            p {
-                font-weight: 600;
-                align-items: center;
-                padding: 0 1rem 2.5rem 1rem;
-            }
-
-            .bottom {
-                padding: 0 1rem 2rem 1rem;
-
-                a {
-                    padding: 1rem 1.5rem;
-                    border-radius: 1rem;
-                    background: $main-black;
-                    color: $main-white;
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    text-transform: uppercase;
-
-                    &:hover {
-                        transition: .1s all;
-                        color: #f17932;
-                    }
-                  }
-               }
-        }
-
-        .aboutContent-img {
-            flex: 1;
-            @include orderFlex (row, center, center);
-            padding: 1rem;
-
-
-            img{
-                width: 100%;
-                margin: 1rem;
-            }
+        @media(min-width: 1200px) {
+            @include orderFlex(row, space-between, center);
+            padding: 2rem 4rem 4rem 4rem;
         }
     }
+
+    .aboutContent-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        position: relative;
+        height: 100%;
+        margin: 1rem;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 3rem 1rem 0 1rem;
+
+
+        }
+
+        h1{
+            text-transform: uppercase;
+            font-weight: 700;
+            align-items: center;
+            font-size: 2rem;
+            padding: 5px 1rem 1rem 1rem ;
+            color: #FF5917;
+        }
+
+        p {
+            font-weight: 600;
+            align-items: center;
+            padding: 0 1rem 2.5rem 1rem;
+        }
+
+        .bottom {
+            padding: 0 1rem 2rem 1rem;
+
+            a {
+                padding: 1rem 1.5rem;
+                border-radius: 1rem;
+                background: $main-black;
+                color: $main-white;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                &:hover {
+                    transition: .1s all;
+                    color: #f17932;
+                }
+              }
+           }
+    }
+
+    .aboutContent-img {
+        flex: 1;
+        @include orderFlex (row, center, center);
+        padding: 1rem;
+
+
+        img{
+            width: 100%;
+            margin: 1rem;
+        }
+    }
+}
+
 
 // -------------------- discover-area---------------------------- //
 
@@ -489,20 +490,35 @@ footer{
             }
 
             .direction{
-                li{
-                    padding: 0.5rem;
+                ul{
+                    .title {
+                        font-size: min(max(20px, 20px), 3vh);
+                        color: $main-orange;
+                    }
+                    li{
+                        padding: 0.5rem;
+                    font-size: min(max(15px, 15px), 2.5vh);
+                    }
                 }
+
             }
 
             .blog {
                 ul{
                     display: flex;
                     flex-direction: column;
+                    .title {
+                        font-size: min(max(20px, 20px), 3vh);
+                        color: $main-orange;
+                    }
                     li{
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        padding-bottom: 1rem ;
+                        padding-bottom: 1rem;
+                        div{
+                            font-size: min(max(15px, 15px), 2.5vh);
+                        }
                         img{
                             width: 80px;
                             height: 80px;
@@ -519,6 +535,10 @@ footer{
                 ul{
                     li{
                         padding: 1rem;
+                    }
+                    .title {
+                        font-size: min(max(20px, 20px), 3vh);
+                        color: $main-orange;
                     }
                     .icon-redes{
                         display: flex;
