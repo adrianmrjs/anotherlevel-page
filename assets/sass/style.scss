@@ -389,7 +389,7 @@ input[type="checkbox"] {
     .principalWrapper {
         @media(min-width: 200px){
             @include orderFlex(column, center, center);
-            padding: 0.5rem ;
+            padding: 4rem 1rem 2rem 1rem ;
         }
 
         @media(min-width: 1200px) {
@@ -489,22 +489,17 @@ footer{
 
             }
 
-            .direction{
-                ul{
-                    .title {
+            .direction{                    .title {
                         font-size: min(max(20px, 20px), 3vh);
                         color: $main-orange;
                     }
                     li{
-                        padding: 0.5rem;
+                        padding: 0.5rem 1rem 1rem 1rem;
                     font-size: min(max(15px, 15px), 2.5vh);
                     }
-                }
-
             }
 
             .blog {
-                ul{
                     display: flex;
                     flex-direction: column;
                     .title {
@@ -515,7 +510,7 @@ footer{
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        padding-bottom: 1rem;
+                        padding: 0 1rem 1rem 1rem;
                         div{
                             font-size: min(max(15px, 15px), 2.5vh);
                         }
@@ -527,12 +522,11 @@ footer{
                             margin: 1rem;
                         }
                     }
-                }
             }
 
             .red{
                 display: flex;
-                ul{
+                justify-content: center;
                     li{
                         padding: 1rem;
                     }
@@ -549,7 +543,6 @@ footer{
                             padding: 0.2rem;
                         }
                     }
-                }
             }
         }
 }

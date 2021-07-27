@@ -401,7 +401,7 @@ input[type=checkbox] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 4rem 1rem 2rem 1rem;
   }
 }
 @media (min-width: 1200px) {
@@ -499,53 +499,54 @@ footer {
     padding: 2rem 4rem 4rem 4rem;
   }
 }
-footer .principalWrapper .direction ul .title {
+footer .principalWrapper .direction .title {
   font-size: min(max(20px, 20px), 3vh);
   color: #FF5917;
 }
-footer .principalWrapper .direction ul li {
-  padding: 0.5rem;
+footer .principalWrapper .direction li {
+  padding: 0.5rem 1rem 1rem 1rem;
   font-size: min(max(15px, 15px), 2.5vh);
 }
-footer .principalWrapper .blog ul {
+footer .principalWrapper .blog {
   display: flex;
   flex-direction: column;
 }
-footer .principalWrapper .blog ul .title {
+footer .principalWrapper .blog .title {
   font-size: min(max(20px, 20px), 3vh);
   color: #FF5917;
 }
-footer .principalWrapper .blog ul li {
+footer .principalWrapper .blog li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
-footer .principalWrapper .blog ul li div {
+footer .principalWrapper .blog li div {
   font-size: min(max(15px, 15px), 2.5vh);
 }
-footer .principalWrapper .blog ul li img {
+footer .principalWrapper .blog li img {
   width: 80px;
   height: 80px;
 }
-footer .principalWrapper .blog ul li div {
+footer .principalWrapper .blog li div {
   margin: 1rem;
 }
 footer .principalWrapper .red {
   display: flex;
+  justify-content: center;
 }
-footer .principalWrapper .red ul li {
+footer .principalWrapper .red li {
   padding: 1rem;
 }
-footer .principalWrapper .red ul .title {
+footer .principalWrapper .red .title {
   font-size: min(max(20px, 20px), 3vh);
   color: #FF5917;
 }
-footer .principalWrapper .red ul .icon-redes {
+footer .principalWrapper .red .icon-redes {
   display: flex;
   flex-direction: row;
 }
-footer .principalWrapper .red ul .icon-redes div {
+footer .principalWrapper .red .icon-redes div {
   width: 35px;
   height: 35px;
   padding: 0.2rem;
