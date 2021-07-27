@@ -526,13 +526,15 @@ footer{
 
             .red{
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                align-items: center;
                     li{
                         padding: 1rem;
                     }
                     .title {
                         font-size: min(max(20px, 20px), 3vh);
                         color: $main-orange;
+                        align-items: center;
                     }
                     .icon-redes{
                         display: flex;

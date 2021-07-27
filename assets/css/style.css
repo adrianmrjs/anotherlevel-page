@@ -533,7 +533,8 @@ footer .principalWrapper .blog li div {
 }
 footer .principalWrapper .red {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 footer .principalWrapper .red li {
   padding: 1rem;
@@ -541,6 +542,7 @@ footer .principalWrapper .red li {
 footer .principalWrapper .red .title {
   font-size: min(max(20px, 20px), 3vh);
   color: #FF5917;
+  align-items: center;
 }
 footer .principalWrapper .red .icon-redes {
   display: flex;
