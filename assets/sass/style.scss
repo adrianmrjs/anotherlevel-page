@@ -15,6 +15,7 @@
 
 *{
     font-family: $main-font-lato;
+     
 }
 
 header {
@@ -311,6 +312,7 @@ input[type="checkbox"] {
 
  .description {
     @include orderFlex(column, center, center);
+    background-color: #000000;
     background: $main-black;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #000000,#000000, #000000, #1d0901);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #000000,#000000, #000000, #1d0901); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -384,6 +386,7 @@ input[type="checkbox"] {
 .discover-area {
     display: flex;
     justify-content: center;
+    background-color: #000000;
     background: $main-black;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #1d0901,#1d0901,#1d0901,#1d0901, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom,#1d0901, #1d0901,#1d0901,#1d0901, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -476,6 +479,7 @@ footer{
     display: flex;
     color: $main-white;
     justify-content: space-around;
+    background-color: #000000;
     background: $main-black;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom,#000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom,#000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -512,11 +516,9 @@ footer{
             }
 
             .blog {
-                    width: 20rem;  
+                    width: 20rem;
                     display: flex;
-                    flex-direction: column;
-                    width: 25rem;
-                    .title {
+                    flex-direction: column;                    .title {
                         font-size: min(max(20px, 20px), 3vh);
                         color: $main-orange;
                     }
@@ -670,3 +672,4 @@ footer{
     }
 }
 // -------------------- About ---------------------------- //
+

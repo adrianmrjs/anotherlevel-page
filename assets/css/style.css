@@ -313,6 +313,7 @@ input[type=checkbox] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #000000;
   background: #000000;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #000000, #000000, #000000, #1d0901);
@@ -388,6 +389,7 @@ input[type=checkbox] {
 .discover-area {
   display: flex;
   justify-content: center;
+  background-color: #000000;
   background: #000000;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #1d0901, #1d0901, #1d0901, #1d0901, #000000);
@@ -474,6 +476,7 @@ footer {
   display: flex;
   color: #ffffff;
   justify-content: space-around;
+  background-color: #000000;
   background: #000000;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #000000);
@@ -525,7 +528,6 @@ footer .principalWrapper .blog {
   width: 20rem;
   display: flex;
   flex-direction: column;
-  width: 25rem;
 }
 footer .principalWrapper .blog .title {
   font-size: min(max(20px, 20px), 3vh);
