@@ -485,6 +485,12 @@ footer{
                 padding: 0.5rem ;
             }
 
+            @media(min-width: 890px) {
+                @include orderFlex(row, space-around, stretch);
+                padding: 2rem 4rem 4rem 4rem;
+
+            }
+
             @media(min-width: 1200px) {
                 @include orderFlex(row, space-around, stretch);
                 padding: 2rem 4rem 4rem 4rem;
@@ -494,14 +500,14 @@ footer{
             .direction{
                 display: flex;
                     flex-direction: column;
-                width: 20rem;                    
+                width: 20rem;
                 .title {
                         font-size: min(max(20px, 20px), 3vh);
                         color: $main-orange;
                     }
                     li{
-                        padding: 0.5rem 1rem 1rem 1rem;
-                    font-size: min(max(15px, 15px), 2.5vh);
+                        padding: 0 1rem 1rem 1rem;
+                        font-size: min(max(15px, 15px), 2.5vh);
                     }
             }
 
@@ -509,6 +515,7 @@ footer{
                     width: 20rem;  
                     display: flex;
                     flex-direction: column;
+                    width: 25rem;
                     .title {
                         font-size: min(max(20px, 20px), 3vh);
                         color: $main-orange;

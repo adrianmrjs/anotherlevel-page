@@ -490,6 +490,15 @@ footer {
     padding: 0.5rem;
   }
 }
+@media (min-width: 890px) {
+  footer .principalWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 2rem 4rem 4rem 4rem;
+  }
+}
 @media (min-width: 1200px) {
   footer .principalWrapper {
     display: flex;
@@ -509,13 +518,14 @@ footer .principalWrapper .direction .title {
   color: #FF5917;
 }
 footer .principalWrapper .direction li {
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
   font-size: min(max(15px, 15px), 2.5vh);
 }
 footer .principalWrapper .blog {
   width: 20rem;
   display: flex;
   flex-direction: column;
+  width: 25rem;
 }
 footer .principalWrapper .blog .title {
   font-size: min(max(20px, 20px), 3vh);
